@@ -32,19 +32,18 @@ public class Main {
     public static void LambdasTesting()
     {
         List<Hero> heroes = Arrays.asList
-                (
-                        new Hero("Hulk", false),
-                        new Hero("Superman", true),
-                        new Hero("Batman", false)
-                );
+        (
+            new Hero("Hulk", false),
+            new Hero("Superman", true),
+            new Hero("Batman", false)
+        );
 
         heroes.stream().filter(hero -> hero.canFly).map(hero -> hero.name).forEach(s -> System.out.println(s));
         String foundName = heroes.stream().filter(hero -> hero.name.contains("Bat")).map(hero -> hero.name).findFirst().orElse("");
         List<String> result = getNamesMeetingCondition(heroes,h -> h.name.contains("man"));
         result.forEach(s-> System.out.println(s));
     }
-    public static List<String> getNamesMeetingCondition(List<Hero> heroList,
-                                          Predicate<Hero> condition)
+    public static List<String> getNamesMeetingCondition(List<Hero> heroList,Predicate<Hero> condition)
     {
         List<String> foundName = new ArrayList<>();
         for(Hero hero: heroList)
