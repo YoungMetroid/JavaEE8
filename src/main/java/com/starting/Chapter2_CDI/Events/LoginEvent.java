@@ -25,4 +25,8 @@ public class LoginEvent
     {
         this.lockAccount = lockAccount;
     }
+
+    public boolean isLockAccount() {
+        return lockAccount;
+    }
 }
