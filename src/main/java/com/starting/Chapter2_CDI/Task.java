@@ -1,10 +1,11 @@
 package com.starting.Chapter2_CDI;
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.control.ActivateRequestContext;
-import javax.enterprise.context.control.RequestContextController;
-import javax.enterprise.inject.se.SeContainer;
-import javax.enterprise.inject.se.SeContainerInitializer;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.control.ActivateRequestContext;
+import jakarta.enterprise.context.control.RequestContextController;
+import jakarta.enterprise.inject.se.SeContainer;
+import jakarta.enterprise.inject.se.SeContainerInitializer;
+import jakarta.inject.Inject;
+
 
 class TaskPersistence
 {
@@ -19,7 +20,8 @@ class TaskPersistence
 @ApplicationScoped
 public class Task
 {
-    @Inject LoginBean bean;
+    @Inject
+    LoginBean bean;
     private final TaskPersistence persistence;
 
     @Inject

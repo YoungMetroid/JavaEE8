@@ -1,6 +1,6 @@
 package com.starting.Chapter2_CDI;
 
-import javax.enterprise.context.RequestScoped;
+import jakarta.enterprise.context.RequestScoped;
 
 @RequestScoped
 public class LoginBean

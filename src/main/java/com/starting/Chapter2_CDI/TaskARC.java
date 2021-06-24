@@ -1,7 +1,8 @@
 package com.starting.Chapter2_CDI;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.control.ActivateRequestContext;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.control.ActivateRequestContext;
+
 
 @ApplicationScoped
 public class TaskARC

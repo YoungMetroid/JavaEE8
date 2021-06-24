@@ -1,16 +1,18 @@
 package com.starting.Chapter2_CDI.Events;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.se.SeContainer;
-import javax.enterprise.inject.se.SeContainerInitializer;
-import javax.inject.Inject;
-import javax.enterprise.event.Event;
+
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.event.Event;
+import jakarta.enterprise.inject.se.SeContainer;
+import jakarta.enterprise.inject.se.SeContainerInitializer;
+import jakarta.inject.Inject;
 
 @ApplicationScoped
 public class AccountService
 {
 
-    @Inject private Event<LoginEvent> event;
+    @Inject
+    private Event<LoginEvent> event;
 
     public void login(int attemptsMadeCount, String byUserId)
     {

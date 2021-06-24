@@ -1,7 +1,9 @@
 package com.starting.Chapter2_CDI.AnnotationLiterals;
 
 
-import javax.inject.Qualifier;
+
+import jakarta.inject.Qualifier;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 

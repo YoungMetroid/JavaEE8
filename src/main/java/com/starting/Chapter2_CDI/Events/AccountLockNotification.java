@@ -1,7 +1,8 @@
 package com.starting.Chapter2_CDI.Events;
 
-import javax.annotation.Priority;
-import javax.enterprise.event.Observes;
+
+import jakarta.annotation.Priority;
+import jakarta.enterprise.event.Observes;
 
 public class AccountLockNotification
 {
